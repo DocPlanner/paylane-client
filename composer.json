@@ -1,0 +1,16 @@
+{
+    "name": "znanylekarz/paylane-client",
+    "description": "PayLane Client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maciej Łebkowski",
+            "email": "m.lebkowski@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "PayLane": "src/PayLane"
+        }
+    }
+}
