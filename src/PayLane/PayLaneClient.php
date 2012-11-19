@@ -28,7 +28,7 @@ class PayLaneClient
 	 *
 	 * @var Object SOAP Client object
 	 */
-	private $soapclient = null;
+	protected $soapclient = null;
 
 	/**
 	 * Private variable holding last error.
@@ -36,7 +36,7 @@ class PayLaneClient
 	 *
 	 * @var boolean|string Error description or false if no error occured
 	 */
-	private $error = false;
+	protected $error = false;
 
 	/**
 	 * Constructor
