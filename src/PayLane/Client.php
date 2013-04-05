@@ -66,7 +66,12 @@ class Client
 	 */
 	public function resale($params)
 	{
-		return $this->soapClient->resale($params['id_sale'], $params['amount'], $params['currency'], $params['description']);
+		$byAuthorization = false;
+		if (isset ($params['resale_by_authorization']))
+		{
+			$byAuthorization = (bool) $params['resale_by_authorization'];
+		}
+		return $this->soapClient->resale($params['id_sale'], $params['amount'], $params['currency'], $params['description'], null, null, $byAuthorization);
 	}
 
 	/**
